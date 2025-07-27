@@ -28,7 +28,7 @@ jobs:
         cache: 'npm'
         cash-dependency-path: package-lock.json
     - run: npm ci
-    - run: Run tests
+    - name: Run tests
       run: npm run test:ci
     - run: build 
     - run: npm run build
